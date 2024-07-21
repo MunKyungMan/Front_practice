@@ -25,7 +25,12 @@ td {
     border: 1px solid #111;
     font-size: 16px;
     color: #333;
-    border-collapse: separate;
+    border-collapse: collapse;
+}
+
+table {
+    margin: 30px auto;
+    font-size: 14px;
 }
 
 /* table.tb2인 스타일 적용 부분 */
@@ -40,6 +45,11 @@ td {
     width: 100px;
     height: 30px;
     line-height: 1.5em;
+}
+
+/* 스크립트를 이용한 마우스 포인터 전환 */
+.tb2 th.th-1 {
+    cursor: pointer;
 }
 
 .tb2 td {
@@ -67,4 +77,32 @@ tfoot {
     background-color: yellow;
     color: #111;
     font-weight: 800;
+}
+
+/* 테이블 tb3 스타일 적용부분 */
+.tb3 {
+    margin: 0 auto;
+}
+
+.tb3 th, td {
+    width: 100px;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+.tb3 td {
+    text-align: center;
+}
+
+.col4 {
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.col4:hover {
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background-color: #333;
 }
