@@ -1,0 +1,166 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Sunflower:wght@300&display=swap');
+
+/* 웹 문서 초기화 부분 */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* color: blue; */
+}
+
+/* 전체 페이지 스타일 */
+/* 이 부분은 웹 문서 전체 글꼴에 대한 스타일 적용부분 */
+body {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+div.container {
+    max-width: 1024px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* header 헤더 태그에 대한 스타일 적용 부분 */
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* 네비게이션 스타일 적용부분 */
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #ffffff;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    /* border: 1px solid white; */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* hover : 마우스 올렸을 때 색 바뀌는 것. */
+nav ul li a:hover {
+    color: #e8491d;
+}
+
+/* main 태크에 속한 콘텐츠에 대한 스타일 적용 */
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #35424a;
+    border-bottom: 2px solid #e8491d;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #35424a;
+}
+
+/* 목록 스타일 적용(공통) */
+main section#section2 ul,
+ol {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border: 1px solid black; */
+}
+
+main section#section2>:nth-child(2) {
+    margin-top: 10px;
+    /* color: yellowgreen; */
+}
+
+main section#section2 li {
+    margin-bottom: 10px;
+}
+
+/* 이미지에 대한 스타일 적용 부분 */
+img {
+    /* 이미지 크기대로 가져오라는 명령어 */
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+main section#section3 .div_img{
+    margin: 0px auto;
+    text-align: center;
+}
+
+/* 이미지 하단에 있는 a링크 태그 스타일 */
+main section#section3 a {
+    color: #e8491d;
+    text-decoration: none;
+}
+
+main section#section3 a:hover {
+    text-decoration: underline;
+}
+
+/* footer 스타일 적용 부분 */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #35424a;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-weight: 700;
+    border-radius: 10px;
+    /* border: 3px solid black; */
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px){
+    .container{
+        width: 95%;
+        padding: 10%;
+    }
+
+    header h1{
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+}

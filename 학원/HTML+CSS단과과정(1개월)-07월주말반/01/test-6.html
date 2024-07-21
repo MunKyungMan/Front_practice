@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-6 연습</title>
+    <link rel="stylesheet" type="text/css" href="./css/test-6.css">
+    <link rel="icon" type="image/x-icon" href="./image/원피스1.svg">
+</head>
+
+<body>
+    <!-- 1. 테이블(table) 태그 연습 -->
+    <!-- 3행 4열 테이블 연습 -->
+    <!-- tr : 행 -->
+    <!-- th : 열(가운대) 제목 -->
+    <!-- td : 왼쪽 텍스트 정렬 -->
+    <!-- colspan : 오른쪽 행과 병합 -->
+    <!-- lowspan : 아래 열과 병합 -->
+    <!-- 6행 4열 -->
+    <main class="container">
+        <table>
+            <caption>
+                <h3>제주도 객실 예약표</h3>
+            </caption>
+            <thead>
+                <tr>
+                    <th>방이름</th>
+                    <th>대상</th>
+                    <th>크기</th>
+                    <th>가격</th>
+                </tr>
+            </thead>
+            <tbody class="tb-1">
+                <tr>
+                    <td>유채방</td>
+                    <td>여성전용</td>
+                    <td rowspan="4">4인실</td>
+                    <td rowspan="4">1인: ￦20000</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">동백방</td>
+                    <td>남성전용</td>
+                    <!-- <td>4인실</td> -->
+                    <!-- <td>1인￦20000</td> -->
+                </tr>
+                <tr>
+                    <!-- <td>동백방</td> -->
+                    <td>가족1팀</td>
+                    <!-- <td>4인실</td> -->
+                    <!-- <td>1인 ￦20000</td> -->
+                </tr>
+                <tr>
+                    <td>유채방</td>
+                    <td>-</td>
+                    <!-- <td>2인실</td> -->
+                    <!-- <td>1인 ￦20000</td> -->
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="4">바깥 전체를 렌트합니다.</td>
+                <!-- <td>??</td>
+            <td>??</td>
+            <td>??</td> -->
+            </tfoot>
+        </table>
+    </main>
+    <br><br>
+    <hr><br><br>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

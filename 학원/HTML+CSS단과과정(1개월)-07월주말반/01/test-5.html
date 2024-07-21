@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-5 연습</title>
+    <link rel="stylesheet" type="text/css" href="./css/test-5.css">
+    <link rel="icon" type="image/x-icon" href="./image/원피스1.svg">
+</head>
+
+<body>
+    <!-- 1. 테이블(table) 태그 연습 -->
+    <!-- 3행 4열 테이블 연습 -->
+    <!-- tr : 행 -->
+    <!-- th : 열(가운대) -->
+    <!-- td : 왼쪽 텍스트 정렬 -->
+    <div class="contents1">
+        <table class="tb-1">
+            <tr>
+                <th style="background-color: black; color: white;">이름</th>
+                <th>성별</th>
+                <th>취미</th>
+                <th class="th4">연락처</th>
+            </tr>
+            <tr>
+                <td>문경만</td>
+                <td>남자</td>
+                <td>운동</td>
+                <td>010-5266-5018</td>
+            </tr>
+            <tr>
+                <td>김현정</td>
+                <td>여자</td>
+                <td>유튜브 시청</td>
+                <td>010-9833-5509</td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <hr><br>
+
+    <!-- 2. 테이블 태그 연습 -->
+    <!-- 4행 4열 테이블 작성 -->
+    <table class="tb-2">
+        <tr>
+            <th>1행1열</th>
+            <td class="td1-2" rowspan="2">1행2열</td>
+            <td>1행3열</td>
+            <td rowspan="2">1행4열</td>
+        </tr>
+        <tr>
+            <th>2행1열</th>
+            <td>2행2열</td>
+            <!-- <td>2행3열</td> -->
+            <!-- <td>2행4열</td> -->
+        </tr>
+        <tr>
+            <th>3행1열</th>
+            <td colspan="2">3행2열</td>
+            <td>3행3열</td>
+            <!-- <td>3행4열</td> -->
+        </tr>
+        <tr>
+            <th>4행1열</th>
+            <td colspan="2">4행2열</td>
+            <td class="td4-3">4행3열</td>
+            <!-- <td class="td4-4">4행4열</td> -->
+        </tr>
+    </table>
+
+    <br>
+    <hr><br>
+
+    <!-- 3. 테이블 복습 -->
+    <table class="tb-3">
+        <tr>
+            <th>이름</th>
+            <td>홍길동</td>
+            <th>연락처</th>
+            <td>010-1234-5678</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3">서울시 종로구 효제동 315-1 단성사 4층</td>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3">프론트 웹 개발에 열공하고 있습니다.</td>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+        </tr>
+    </table>
+
+    <br>
+    <hr><br>
+
+    <div class="contents1">
+        <table class="tb-1">
+            <tr>
+                <th style="background-color: black; color: white;">상품명</th>
+                <th>수량</th>
+                <th>색상</th>
+                <th class="th4">수량</th>
+            </tr>
+            <tr>
+                <td>자전거</td>
+                <td>중간</td>
+                <td>빨강</td>
+                <td>1(ea)</td>
+            </tr>
+            <tr>
+                <td>킥보드</td>
+                <td>중간</td>
+                <td>파랑</td>
+                <td>1(ea)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>합계</td>
+                <td>2(ea)</td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <hr><br>
+
+    
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

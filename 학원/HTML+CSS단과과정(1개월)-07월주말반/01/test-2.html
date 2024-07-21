@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-2 연습 (24자까지 가능)</title>
+    <link rel="stylesheet" type="text/css" href="./css/test-2.css">
+    <!-- 외부 스타일 링크 방식(파일 연결) -->
+    <link rel="icon" type="image/x-icon" href="./image/원피스1.svg">
+    <!-- 파비콘 적용부분(타이틀 글골 왼쪽에 이모지를 보임) -->
+    <!-- 단축키 컨트롤 + 물음표 -->
+    <!-- 들여쓰기 단축키 : 컨트롤 + k + f -->
+    <style>
+        /* 여기에 추가 스타일을 작성할 수 있습니다 */
+    </style>
+</head>
+
+<body>
+    <!-- 1. 블록요소인 h1태크 ~ h6태그 연습 -->
+    <!-- 제목태그 연습 -->
+    <h1 style="color: black;">K-POP대한민국 대표음악</h1>
+    <h2 style="color: green;">동해물과 백두산이</h2>
+    <h3>마르고 닳도록</h3>
+    <h4>하느님이 보우하사</h4>
+    <h5>우리나라 만세~</h5>
+    <h6>무궁화 삼천리~</h6>
+
+    <br>
+    <hr class="line30_hr"><br>
+
+    <!-- 2. 블록요소인 p태그 연습 -->
+    <!-- 한 줄 또는 여러 줄 문장 작성시 사용 문단을 나누고자 할때는 br태그를 사용한다.-->
+    <p class="line_32 p">동해물과 백두산이<br> 마르고 닳도록 하느님이 보우하사 우리나라 만세~~<br>
+        동해물과 백두산이<br> 마르고 닳도록 하느님이 보우하사 우리나라 만세~~<br>
+        동해물과 백두산이<br> 마르고 닳도록 하느님이 보우하사 우리나라 만세~~<br>
+        동해물과 백두산이<br> 마르고 닳도록 하느님이 보우하사 우리나라 만세~~<br>
+        동해물과 백두산이<br> 마르고 닳도록 하느님이 보우하사 우리나라 만세~~<br>
+        동해물과 백두산이<br> 마르고 닳도록 하느님이 보우하사 우리나라 만세~~<br>
+        동해물과 백두산이<br> 마르고 닳도록 하느님이 보우하사 우리나라 만세~~<br>
+        동해물과 백두산이<br> 마르고 닳도록 하느님이 보우하사 우리나라 만세~~<br>
+        동해물과 백두산이<br> 마르고 닳도록 하느님이 보우하사 우리나라 만세~~<br>
+        동해물과 백두산이<br> 마르고 닳도록 하느님이 보우하사 우리나라 만세~~<br>
+        동해물과 백두산이<br> 마르고 닳도록 하느님이 보우하사 우리나라 만세~~<br>
+    </p>
+
+    <br>
+    <hr><br>
+
+    <!-- 3. 블록요소인 br태그 연습 -->
+    <!-- 문단을 나누고자 할때 사용하는 태그 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Nulla, debitis? Soluta, odio. Reiciendis, velit sunt rem cum ex laudantium doloribus, <br>
+        cumque autem dolorum ad laboriosam aspernatur modi, ratione alias saepe?<br>
+    </p>
+
+    <br>
+    <hr><br>
+
+    <!-- 4. 블록요소인 blockquote태그 연습 -->
+    <!-- 웹 문서상에 인용문을 적용하고자 할때 -->
+    <h1 class="line60_h1">제주이색 여행지</h1>
+    <h2 class="line61_h2">야외텐트를 닮은 건축물 '테쉬폰'</h2>
+    <p class="line64_p">유럽의 아일랜드 출신 임피제 신부님이 1954년
+        제주도에 오면서 목장 숙소로 짓기 시작하면서 사료공장으로
+        성당으로 활용됐습니다.
+    </p>
+
+    <blockquote class="line69_bq">성이시돌 목장은 제주특별자치도 제주특별자치도 제주시 한림읍 금악리에 있는
+        목장이다. 특히, 이목장은 제주지역 최초의 제주도에전기업목장(電氣畜牧場)으로 1961년 11월말 제주시
+        한림읍 금악리에 세워 양돈사업을 실시하였으며, 면양을 사육하였던 것으로 알려져있다.
+        이시돌목장의 특색은 건축양식으로 테쉬폰도 유명하다.(출처:향토문화전자대전)
+    </blockquote>
+
+    <br>
+    <hr><br>
+
+    <!-- 5. 블록요소인 pre태그 연습 -->
+    <!-- 보이는대로 출력하는 태그이다. -->
+    <div class="line80_div">
+        <h3 class="line81_h3">로컬스토리지(Local Storage)</h3>
+        <pre>
+            function savetheLocal(){
+                var second = document.getElementById("Second");
+                var theValue = second.value;
+                localStorage.setItem(1, theValue);
+                gettheLocal();
+            }
+        </pre>
+        <p>
+            function savetheLocal(){<br>
+            var second = document.getElementById("Second")<br>
+            var theValue = second.value;<br>
+            localStorage.setItem(1, theValue);<br>
+            gettheLocal();<br>
+            }
+        </p>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <br>
+    <hr><br>
+
+    <!-- 복습 문제 -->
+    <div class="ex_102">
+        <h3 class="h3_106">재난 대비 국민행동 요령</h3>
+        <blockquote class="bq_104">
+            지진으로 흔들리는 동안은 테이블(책상) 밑에 들어가 몸을 보호한다.<br>(출처: 국민안전처)
+        </blockquote>
+    </div>
+
+
+    <br>
+    <hr><br>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 문제 정답 -->
+
+
+
+
+
+</body>
+
+</html>

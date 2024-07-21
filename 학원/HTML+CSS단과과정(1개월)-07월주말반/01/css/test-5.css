@@ -1,0 +1,120 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Sunflower:wght@300&display=swap');
+
+/* 웹 문서 초기화 부분 */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* 전체 페이지 스타일 */
+/* 이 부분은 웹 문서 전체 글꼴에 대한 스타일 적용부분 */
+body {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* 1. 3행 4열 테이블 스타일 적용 */
+/* border-collapse: collapse;  : 표가 엑셀 표처럼 선이 합쳐서 보여짐. */
+.contents1 {
+    width: 500px;
+    height: auto;
+    border: 5px solid black;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    padding: 10px 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: separate;
+    margin-left: auto;
+    margin-right: auto;
+    /* border-collapse: collapse; */
+}
+
+.tb-1 th {
+    height: 30px;
+    font-size: 18px;
+    padding: 10px 5px;
+}
+
+.tb-1 td {
+    width: 200px;
+    height: 50px;
+    text-align: right;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.th4 {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+/* 2. 4행 4열 테이블 작성 */
+.tb-2,
+.tb-2 th,
+.tb-2 tb {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-radius: 5px;
+}
+
+.tb-2 td {
+    width: 120px;
+    height: 30px;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    padding: 0 20px;
+}
+
+.td1-2 {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.td4-3 {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+.tb-2 .td1-2:hover {
+    background-color: yellowgreen;
+    color: black;
+    text-shadow: 2px 2px 3px red;
+}
+
+.tb-2 .td4-3:hover {
+    background-color: black;
+    color: white;
+    text-shadow: 2px 2px 3px red;
+}
+
+/* 3. 테이블 복습 스타일 적용 */
+.tb-3,
+.tb-3 th,
+.tb-3 tb {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,142 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Myeongjo&display=swap');
+
+/* 웹 문서 초기화 부분 */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: blue;
+}
+
+/* 이 부분은 웹 문서 전체 글꼴에 대한 스타일 적용부분 */
+body {
+    font-family: "Nanum Myeongjo", serif, "맑은 고딕";
+    font-weight: 400;
+}
+
+/* Line_22 스타일 적용부분 */
+h1, h2, h3, h4, h5, h6 {
+    /* border: 1px solid red; */
+    width: 450px;
+    height: auto;
+    text-align: center;
+    border: none;
+    /* background-color: gray; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-bottom: 10px;
+}
+
+/* 제주이색여행지 스타일 적용부분 */
+.line60_h1 {
+    border: none;
+}
+
+.line61_h2 {
+    border: none;
+}
+
+/* Line_34 p태그 스타일 적용부분 */
+.line_32 {
+    border: 1px solid red;
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.line64_p {
+    width: 500px;
+    height: auto;
+    margin: 10px auto;
+    /* border: 1px solid black; */
+}
+
+/* line_69 blockquote 스타일 적용 부분 */
+.line69_bq {
+    width: 500px;
+    height: auto;
+    margin: 10px auto;
+    /* border: 1px solid red; */
+    /* padding-left: 30px; */
+    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    padding-top: 5px;
+    /* padding: 10px; */
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    background-color: yellowgreen;
+
+}
+    
+
+/* 로컬스토리지 스타일 적용 부분 */
+.line80_div {
+    border: 1px solid blue;
+    width: 500px;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px 20px 20px 30px;
+}
+
+div h3.line81_h3 {
+    /* margin: 0; */
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* hr 태그에 대한 스타일 적용 */
+.line30_hr {
+    /* border: 2px solid black; */
+    height: 20px;
+    border-top-color: red;
+    border-bottom: blue;
+    border-right-color: black;
+    border-left-color: purple;
+    border: 1px solid;
+}
+
+/* 복습 문제 CSS */
+
+.ex_102 {
+    border: 3px solid black;
+    width: 500px;
+    height: auto;
+    margin: 20px auto;
+    color: black;
+    padding: 10px 0px;
+}
+
+.h3_106{
+    color: black;
+    text-align: left;
+
+}
+.bq_104 {
+    padding-left: 30px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

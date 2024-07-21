@@ -1,0 +1,338 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Sunflower:wght@300&display=swap');
+
+/* 웹 문서 초기화 부분 */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* 전체 페이지 스타일 */
+/* 이 부분은 웹 문서 전체 글꼴에 대한 스타일 적용부분 */
+body {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* 공동요소인 a태그 */
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 공동요소인 p태그 */
+p {
+    line-height: 1.5em;
+}
+
+/* 메인 프레임에 대한 스타일 적용 */
+.contents1 {
+    border: 8px solid rgb(13, 13, 13);
+    border-left-width: 2px;
+    border-top-width: 2px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: aliceblue;
+}
+
+.u1,
+.u1-1,
+.u1-1-1 {
+    list-style-type: none;
+    list-style-position: inside;
+    line-height: 1.5em;
+    /* border: 1px solid red; */
+}
+
+.u1 {
+    list-style-type: decimal;
+    list-style-position: inside;
+    line-height: 1.2em;
+}
+
+.u1-1 {
+    list-style-type: square;
+    margin-left: 42px;
+    line-height: 1.5em;
+}
+
+.u1-1-1 {
+    list-style-type: disc;
+    margin-left: 42px;
+    line-height: 1.8em;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.p67 {
+    text-indent: 10px;
+    /* border: 1px solid red; */
+}
+
+.p68 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-indent: 10px;
+}
+
+ul.u1>li:nth-child(5)>a {
+    color: blue;
+    font-weight: 600;
+}
+
+ul.u1-1>li:nth-child(5)>a {
+    color: green;
+    font-weight: 600;
+}
+
+/* 2. 복습문제 1(짱구 카페) */
+.contents2 {
+    border: 5px solid rgb(13, 13, 13);
+    width: 400px;
+    height: auto;
+    padding: 20px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: aliceblue;
+}
+
+.ul li {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contents2 {
+    padding: 10px;
+}
+
+.contents2 h2 {
+    margin-bottom: 20px;
+    width: 110px;
+}
+
+.contents2 ul {
+    /* margin-left: 42px; */
+    line-height: 1.5em;
+    list-style-position: inside;
+    padding: 20px;
+}
+
+.contents2>ul>li:nth-child(3)>ul>li:nth-child(3)>a {
+    color: red;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* 순서가 있는 목록 ol태그 연습 */
+.contents3 {
+    margin-top: 30px;
+    border: 8px solid rgb(13, 13, 13);
+    border-left-width: 2px;
+    border-top-width: 2px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: aliceblue;
+}
+
+.contents3 h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px gray;
+    letter-spacing: -2px;
+    /* border: 1px solid red; */
+}
+
+ol {
+    margin-left: 10px;
+}
+
+.contents3 ul {
+    list-style-type: none;
+    line-height: 1.5em;
+    list-style-position: inside;
+    margin-left: 30px;
+}
+
+.contents3 ul>li:nth-child(1) {
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.contents3 ul>li:nth-child(2) {
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.contents3 ul>li:nth-child(3) {
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.contents3 ul>li:nth-child(2)>a {
+    color: red;
+}
+
+.contents3 ul>li:nth-child(3)>a {
+    color: blue;
+}
+
+.contents3 ul>li:nth-child(1)>ol {
+    margin-left: 42px;
+}
+
+.contents3 ul>li:nth-child(2)>ol {
+    margin-left: 42px;
+}
+
+.contents3 ul>li:nth-child(3)>ol {
+    margin-left: 42px;
+}
+
+/* 2. 복습문제 2(맹구 카페) */
+.contents4 {
+    border: 5px solid rgb(13, 13, 13);
+    width: 400px;
+    height: auto;
+    padding: 20px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: aliceblue;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contents4 {
+    padding: 10px;
+}
+
+.contents4 h2 {
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+.contents4 ul {
+    margin-left: 20px;
+    line-height: 1.4em;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.contents4 ol {
+    margin-left: 42px;
+    line-height: 1.5em;
+    list-style-position: inside;
+}
+
+.contents4>ul>li:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.contents4>ul>li:nth-child(1)>a {
+    font-weight: 600;
+    color: red;
+}
+
+.contents4>ul>li:nth-child(2)>a {
+    font-weight: 600;
+    color: blue;
+}
+
+
+
+
+/* 2. 복습문제 3 */
+/* .container1, .container2{
+    border: 5px solid rgb(13, 13, 13);
+    width: 400px;
+    height: auto;
+    padding: 20px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+} */
+
+/* .container {
+    width: 800px;
+    border: 1px solid red;
+}
+
+.container ol{
+    line-height: 1.4em;
+} */
+
+.contents5 {
+    /* border: 5px solid rgb(13, 13, 13); */
+    width: 1000px;
+    height: auto;
+    padding: 20px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contents5 ol {
+    line-height: 1.4em;
+    padding-left: 20px;
+    margin-top: 10px;
+    list-style-position: inside;
+}
+
+div.contents5 .div_3_1,
+.div_3_2 {
+    width: 380px;
+    border: 3px solid black;
+    display: inline-block;
+    padding: 10px 10px;
+
+}
+
+div.contents5 .div_3_1,
+.div_3_2 {
+    margin-left: 30px;
+}

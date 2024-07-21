@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Sunflower:wght@300&display=swap');
+
+/* 웹 문서 초기화 부분 */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* 전체 페이지 스타일 */
+/* 이 부분은 웹 문서 전체 글꼴에 대한 스타일 적용부분 */
+body {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* 테이블 공통요소 스타일 적용부분 */
+table,
+th,
+td {
+    border: 1px solid #111;
+    font-size: 16px;
+    color: #333;
+    border-collapse: separate;
+}
+
+/* table.tb2인 스타일 적용 부분 */
+.tb2 {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    /* border-top-right-radius: 10px; */
+}
+
+.tb2 th {
+    width: 100px;
+    height: 30px;
+    line-height: 1.5em;
+}
+
+.tb2 td {
+    height: 80px;
+    width: 140px;
+    padding-right: 10px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+caption {
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    margin: 10px auto;
+}
+
+thead {
+    background-color: yellowgreen;
+    color: #111;
+    font-weight: 800;
+}
+
+tfoot {
+    background-color: yellow;
+    color: #111;
+    font-weight: 800;
+}
