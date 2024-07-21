@@ -106,3 +106,15 @@ tfoot {
     cursor: pointer;
     background-color: #333;
 }
+
+.js_tb4 {
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+.js_tb4 .js_tb4 th, .js_tb4 td {
+    width: 120px;
+    height: 30px;
+    color: white;
+    border-color: green;
+}
