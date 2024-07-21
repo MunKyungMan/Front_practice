@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-9 연습</title>
+    <link rel="stylesheet" type="text/css" href="./css/test-9.css">
+    <link rel="icon" type="image/x-icon" href="./image/원피스1.svg">
+    <script src="./javascript/jquery-3.7.1.js" type="javascript"></script>
+</head>
+
+<body>
+    <!-- form태그 속성인(name, action, method, autocomplete) 연습 -->
+    <!-- label, input 인라인 요소 -->
+    <form name="f1" action="http://search.naver.com/search.naver" method="get" autocomplete="on">
+        <input type="text" name="query" title="검색어 입력">
+        <input type="submit" value="검색하기">
+        <input type="reset" value="취소하기">
+    </form>
+
+    <br>
+    <hr><br>
+
+    <!-- form태그에 label태그와 input태그 연결 연습 -->
+    <form name="f2" action="#" method="get" autocomplete="on">
+        <label for="user_id">아이디1번<input type="text" id="user_id" name="user_id" value=""></label>
+        <input type="submit" value="전송하기">
+        <input type="reset" value="다시작성">
+
+
+        <br><br>
+        <hr><br>
+
+        <label for="user_ID2">아이디2번</label>
+        <input type="text" id="user_ID2" name="user_ID2" value="">
+        <input type="submit" value="전송하기">
+        <input type="reset" value="다시작성">
+
+    </form>
+
+    <br>
+    <hr><br>
+
+    <!-- 3.formxorm label태그, input태그 연습2 -->
+    <form name="f3" action="#" method="get" autocomplete="on">
+        <!-- method="get(도메인 주소에 모든게 드러남.) or post(db연결하면 도메인에 정보를 숨겨서 보냄)" -->
+        <label for="user_id3">아이디<input type="text" name="user_id3" id="user_id3" value="" size="10"></label>
+        <label for="user_pwd">비밀번호<input type="password" name="user_pwd" id="user_pwd" value="" size="10"></label>
+        <input type="submit" value="전송하기">
+        <input type="reset" value="다시작성">
+    </form>
+
+    <br>
+    <hr><br>
+
+    <!-- label태그 사용과 미사용시 차이점 알아보기. -->
+    <form name="f4" action="#" method="get" autocomplete="on">
+        <h2>OOO대학교 2학기 수강신청</h2>
+        <h3><mark>수강분야(다수선택가능)</mark></h3>
+        <ul>
+            <li><label><input type="checkbox" name="study_in" value="">문법</label></li>
+            <!-- label이 없으면 체크박스만 선택 가능하지만 있으면 옆에 문자를 클릭해도 체크박스가 작동함. -->
+            <li><input type="checkbox" name="study_in" value="">작문</li>
+            <li><input type="checkbox" name="study_in" value="">독해</li>
+        </ul>
+        <br>
+        <hr><br>
+        <h3>수강과목(1개이상 선택가능)</h3>
+        <ul>
+            <li><label>문법<input type="checkbox" name="study_in" value=""></label></li>
+            <li><label>작문<input type="checkbox" name="study_in" value=""></label></li>
+            <li><label>독해<input type="checkbox" name="study_in" value=""></label></li>
+        </ul>
+        <br>
+        <hr><br>
+
+        <h3>수강과목(1개개만 선택가능)</h3>
+        <ul>
+            <li><label>문법<input type="radio" name="study_in" value=""></label></li>
+            <li><label>작문<input type="radio" name="study_in" value=""></label></li>
+            <li><label>독해<input type="radio" name="study_in" value=""></label></li>
+        </ul>
+        <input type="submit" value="수강신청">
+        <input type="reset" value="다시작성">
+    </form>
+
+    <br>
+    <hr><br>
+
+    <!-- 5. form태그에 fieldset / legend -->
+    <!-- required : 필수 요소 -->
+    <div>
+        <form name="f5" action="#" method="get" autocomplete="on">
+            <fieldset>
+                <legend>개인정보</legend>
+                <ul>
+                    <li>
+                        <label>이름</label>
+                        <input type="text" name="username" id="username" value="" required>
+                    </li>
+                    <li>
+                        <label>이메일</label>
+                        <input type="email" name="user_email" id="user_email" value="" required>
+                    </li>
+
+                </ul>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>로그인정보</legend>
+                <ul>
+                    <li>
+                        <label for="user_id1">아이디</label>
+                        <input type="text" name="user_id1" id="user_id1" name="user_id1" value="" required>
+                    </li>
+                    <li>
+                        <label for="user_pwd1">아이디</label>
+                        <input type="password" name="user_pwd1" id="user_pwd1" name="user_pwd1" value="" required>
+                    </li>
+
+                </ul>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <input type="submit" value="로그인">
+                    <input type="reset" value="취소하기">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+
+</body>
+
+</html>

@@ -19,19 +19,19 @@ body {
 }
 
 /* 웹문서상에 img태그에 대한 스타일 적용부분 */
-.art1 {
+article.art1 {
     margin: 0px auto;
     margin-top: 30px;
     width: 700px;
 }
 
-.art2 {
+article.art2 {
     margin: 0px auto;
     margin-top: 30px;
-    width: 960px;
+    width: 80%;
 }
 
-.art1 .art2 img {
+.art1 img {
     border: 20px ridge violet;
 }
 
@@ -40,21 +40,23 @@ body {
 }
 
 /* 테이블에 대한 스타일 적용부분 */
-table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
-    border-collapse: separate;    
+    border-collapse: separate;
 }
 
 .art2 th {
     font-size: 1.5em;
 }
 
-.tr1c1 th {
+tr.tr1c1 th {
     width: 360px;
     padding: 10px;
 }
 
-.tr1c1 td {
+tr.tr1c1 td {
     width: 360px;
     height: 360px;
     padding: 10px;
@@ -62,13 +64,38 @@ table, th, td {
 
 /* 3. 복습문제 */
 .art3 {
-    width: 540px;
+    width: 530px;
+    height: auto;
+    padding: 0px 10px;
+    margin: 0px auto;
+    margin-top: 30px;
 }
 
-.art3 table {
+table.table_2 {
+    border-collapse: separate;
+}
+
+table.table_2 th {
+    width: 170px;
+    padding: 5px 0;
+    font-size: 90%;
+}
+
+table.table_2 td {
     text-align: center;
+    padding: 5px 0px;
 }
 
-.art3 img {
-    margin: 10px auto;
+.td2c3:hover,
+.td2c4:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black, -1px -1px -2px;
+}
+
+.tr3img {
+    border: none;
+    padding: 20px 20px;
 }
