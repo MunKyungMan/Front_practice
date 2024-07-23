@@ -1,11 +1,7 @@
 /* 레이아웃 */
-#header {
-    background: url(../img/header_bg.jpg) repeat-x center top;
-}
-#nav {
-    background-color: #f6fdff;
-}
-
+#header {background: url(../img/header_bg.jpg) repeat-x center top;}
+#nav {background-color: #f6fdff;}
+#title {background-color: #eaf7fd;}
 
 /* 컨테이너 */
 .container {
@@ -13,6 +9,7 @@
     margin: 0 auto;
     /* background: rgba(0, 0, 0, 0.3); */
 }
+
 
 /* 헤더 */
 .header {
@@ -134,6 +131,7 @@
     0 0 0 100px rgba(0, 0, 0, 0.1) inset;
 }
 
+
 /* 전체 메뉴 */
 .nav {
     overflow: hidden; padding: 25px 0;
@@ -150,15 +148,39 @@
     border-radius: 50%;
     position: absolute; left: 0; top: 6px;
 }
+.nav > div li a {position: relative;}
+.nav > div li a:after {
+    content: '';
+    display: inline-block;
+    width: 0; height: 1px;
+    background: #25aad0;
+    transition: all .2s ease-out;
+    position: absolute; bottom: 0; left: 0;
+}
+.nav > div li:hover a:after {
+    width: 100%;
+}
 .nav > div:last-child li {width: 100%;}
 .nav > div h3 {font-size: 18px; color: #25a2d0; font-weight: bold; margin-bottom: 4px;}
 
 
-
-
-
-
-
+/* 타이틀 */
+.title {position: relative; text-align: center;}
+.title h2 {font-family: 'Nanum Brush Script', cursive; font-size: 39px; color: #0093bd; padding: 5px 0;}
+.title .btn {
+    position: absolute; right: 0; top: 5px;
+    width: 60px; height: 60px;
+    line-height: 60px;
+    background: #3192bf; color: #fff;
+    font-size: 35px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.title .btn:hover {
+    box-shadow: 
+        0 0 0 3px rgba(71, 154, 191, 0.9) inset,
+        0 0 0 100px rgba(0, 0, 0, 0.1) inset;
+}
 
 
 
