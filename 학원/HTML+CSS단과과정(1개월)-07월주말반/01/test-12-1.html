@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-12-1 연습</title>
+    <link rel="stylesheet" type="text/css" href="./css/test-12-1.css">
+    <link rel="icon" type="image/x-icon" href="./image/원피스1.svg">
+    <script src="./javascript/jquery-3.7.1.js" type="javascript"></script>
+</head>
+
+<body>
+    <!-- 복습문제 수강신청 select 메뉴 만들기 -->
+    
+        <h3 class="h3">여름 방학 특강 신청</h3>
+        <form class="form4" action="#" name="form4" method="get" autocomplete="on">
+            <table class="container">
+                <tbody>
+                    <tr>
+                        <td class="td">
+                            <fieldset>
+                                <legend>수강 신청인</legend>
+                                <ul>
+                                    <li>
+                                        <label for="Student_ID">학번 : </label>
+                                        <input type="text" id="Student_ID" name="Student_ID" size="10" maxlength="8"
+                                            required placeholder="숫자만 입력">
+                                    </li>
+                                    <li>
+                                        <label for="u_name">이름 : </label>
+                                        <input type="text" id="u_name" name="u_name" size="10" required>
+                                    </li>
+                                    <li>
+                                        <label for="class">학과 : </label>
+                                        <select size="5" id="class">
+                                            <option value="arch">건축공학과</option>
+                                            <option value="mechanic">기계공학과</option>
+                                            <option value="indust">산업공학과</option>
+                                            <option value="elec">전기전자공학과</option>
+                                            <option value="computer" selected>컴퓨터공학과</option>
+                                            <option value="interior">인테리어학과</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <div class="div-3">
+                                <input type="submit" value="수강신청">
+                                <input type="reset" value="다시작성">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+</body>
+
+</html>
