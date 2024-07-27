@@ -11,10 +11,114 @@
 </head>
 
 <body>
-    
+    <!-- 
+        input태그 항목
+    1. 아이디      2. 비밀번호
+    3. 이메일주소   4. 전화번호
+    5. 날짜       6. 체크박스
+    7. week      8. radio
+    9.hidden     10. url
+    등등~
+    -->
+
+    <!-- 1. input type="hidden" 속성연습 -->
+    <h3>input type="hidden" 속성연습</h3>
+    <form name="f1" action="#" method="get">
+        <label for="user_id">아이디 :
+            <input type="text" size="15" maxlength="10" name="user_id" id="user_id" required placeholder="특수기호@#$15자">
+        </label>
+
+        <label for="user_pwd">비밀번호 :
+            <input type="password" size="15" maxlength="10" name="user_pwd" id="user_pwd" required
+                placeholder="특수기호@#$15자">
+        </label>
+
+        <input type="hidden" name="game_token" id="gameToken" value="xm231jp">
+
+        <input type="submit" value="로그인">
+        <input type="reset" value="취소">
+    </form>
 
     <br>
     <hr><br>
+
+    <!-- 2. input type="password" 속성연습 -->
+    <form action="f2" action="#" method="get">
+        <label for="user_id1">아이디 : </label>
+        <input type="text" id="user_id1" name="user_id1" size="15" maxlength="10" required placeholder="특수기호@#$15자">
+
+        <label for="user_pwd1">비밀번호 : </label>
+        <input type="password" id="user_pwd1" name="user_pwd1" size="15" maxlength="10" required
+            placeholder="특수기호@#$15자">
+
+        <input type="submit" value="로그인">
+        <input type="reset" value="취소">
+    </form>
+
+    <br>
+    <hr><br>
+
+    <!-- 3. input type="search" 속성연습 -->
+    <form name="f3" action="http://search.naver.com/search.naver" method="get">
+        <label for="user_query">검색어입력 : </label>
+        <input type="search" name="query" id="user_query" placeholder="search..." title="검색어를 입력하세요.">
+
+        <input type="text" name="query" title="검색어 입력">
+        <input type="submit" value="검색">
+        <input type="reset" value="취소">
+    </form>
+
+    <br>
+    <hr><br>
+
+    <!-- 4. input type="text" 속성연습 -->
+    <form name="f4" action="#" method="get">
+        <label for="user_name1">이름 : </label>
+        <input type="text" size="10" maxlength="" required value="" id="user_name1" name="query">
+
+        <input type="submit" value="전송">
+        <input type="reset" value="취소">
+    </form>
+
+    <br>
+    <hr><br>
+
+    <!-- 5. input type="url" 속성연습 -->
+    <form name="f5" action="#" method="get">
+        <label for="Website">Website URL</label>
+        <input type="url" id="Website" name="query" placeholder="https://example.com" required>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <br>
+    <hr><br>
+
+    <!-- 6. input type="email" 속성연습 -->
+    <form name="f6" action="#" method="get">
+        <label for="user_email">Email</label>
+        <input type="email" name="query" id="user_email" placeholder="example@abc.com" required>
+
+        <input type="submit" value="Login">
+        <input type="reset" value="Logout">
+    </form>
+
+    <br>
+    <hr><br>
+
+    <!-- 7. input type="tell" 속성연습 -->
+    <form name="f7" action="#" method="get">
+        <label for="user_tell">전화번호</label>
+        <input type="tell" name="query" id="user_tell" title="010-xxxx-xxxx/지역번호-xxxx-xxxx" required
+            pattern="[0-6]{3}-[0-9]{4}-[0-9]{4}">
+
+        <input type="submit" value="전송">
+        <input type="reset" value="다시작성">
+    </form>
+
+
+
 
 
     <br><br><br><br><br><br><br><br><br><br>

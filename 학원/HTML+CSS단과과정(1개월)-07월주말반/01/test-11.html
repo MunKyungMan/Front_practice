@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-11 연습</title>
+    <link rel="stylesheet" type="text/css" href="./css/test-11.css">
+    <link rel="icon" type="image/x-icon" href="./image/원피스1.svg">
+    <script src="./javascript/jquery-3.7.1.js" type="javascript"></script>
+</head>
+
+<body>
+    <form name="f1" action="http://search.naver.com/search.naver" method="get" autocomplete="on">
+        <h3><mark>회원가입</mark></h3>
+        <fieldset>
+            <legend>로그인정보</legend>
+            <ul>
+                <li>
+                    <label for="user_id">아이디 : <input type="text" id="user_id" name="query" size="15" maxlength="10"
+                            required placeholder="특수문자@#$15자"></label>
+                </li>
+                <li>
+                    <label for="user_pwd">비밀번호 : <input type="password" id="user_pwd" name="user_pwd" size="15"
+                            maxlength="10" required placeholder="특수문자@#$15자"></label>
+                </li>
+                <li>
+                    <label for="user_pwd1">비밀번호 확인 : <input type="password" id="user_pwd1" name="user_pwd1" size="15"
+                            maxlength="10" required placeholder="특수문자@#$15자"></label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="user_name1">이름 : <input type="text" id="user_name1" name="user_name1" size="10" required
+                            placeholder="이름압력"></label>
+                </li>
+                <li>
+                    <label for="user_email">Email주소 : <input type="email" id="user_email" name="user_email" required
+                            placeholder="sample@example.com"></label>
+                </li>
+                <li>
+                    <label for="user_tell">연락처 : <input type="tel" id="user_tell" name="user_tell" title="010-xxxx-xxxx"
+                            required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+                    </label>
+                </li>
+                <li>
+                    <label for="user_url">블로그/홈페이지 : <input type="url" id="user_id" name="user_name"
+                            placeholder="https://example.com" required>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="제출">
+        <input type="reset" value="취소">
+    </form>
+
+    <br>
+    <hr><br>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+
+</body>
+
+</html>
