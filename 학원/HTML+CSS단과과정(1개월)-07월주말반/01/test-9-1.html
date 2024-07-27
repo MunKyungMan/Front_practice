@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-9-1 연습</title>
+    <link rel="stylesheet" type="text/css" href="./css/test-9-1.css">
+    <link rel="icon" type="image/x-icon" href="./image/원피스1.svg">
+    <script src="./javascript/jquery-3.7.1.js" type="javascript"></script>
+</head>
+
+<body>
+    <!-- 복습 문제 상품주문서 연습 -->
+    <form name="f7" action="#" method="get" autocomplete="on">
+        <h3><mark>상품주문서</mark></h3>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li><label for="user_name">이름<input type="text" name="user_name" value="" required
+                            placeholder="여백없이 입력"></label></li>
+                <li><label for="user_phone">연락처<input type="text" name="user_phone" value="" required
+                            placeholder="여백없이 입력"></label></li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>배송지정보</legend>
+            <ul>
+                <li><label for="user_adress">주소<input type="text" name="user_adress" value="" required></label></li>
+                <li><label for="user_tell">전화번호<input type="text" name="user_tell" value="" required></label></li>
+                <li><label for="user_memo">메모<textarea id="user_memo" cols="20" rows="3"
+                            placeholder="배송관련 요청사항 입력"></textarea></label></li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>주문정보</legend>
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox">과태말라 안티구아 과일<small>(100g)</small>
+                        <input type="number" min="1" max="15" step="2">개
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox">인도네시아 만델링<small>(100g)</small>
+                        <input type="number" min="0" max="10" step="1">개
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox">탐라는도다(블렌딩)<small>(100g)</small>
+                        <input type="number" min="2" max="20" step="2">개
+                    </label>
+                </li>
+                <input type="submit" value="주문하기">
+                <input type="reset" value="다시작성">
+            </ul>
+        </fieldset>
+    </form>
+
+    <br>
+    <hr><br>
+
+ 
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+
+</body>
+
+</html>

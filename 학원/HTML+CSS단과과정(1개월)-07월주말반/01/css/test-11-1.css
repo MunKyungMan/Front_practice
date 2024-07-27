@@ -34,7 +34,7 @@ body {
     box-shadow: 2px 2px 3px #333, 2px -2px 3px #333;
 }
 
-h3 {
+.form1 h3 {
     height: auto;
     width: 200px;
     margin: 0 auto;
@@ -52,6 +52,7 @@ ul>li {
     /* display: inline-block; */
     /* border: 1px solid red; */
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 label {
@@ -94,4 +95,21 @@ input {
     width: 250px;
     font-size: 20px;
     height: auto;
+}
+
+
+.form2 {
+    margin: 0 auto;
+    width: 750px;
+    border: 2px solid black;
+    margin-top: 30px;
+    height: auto;
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #333, 2px -2px 3px #333;
+}
+
+.form2>label, .form2>input {
+    width: auto;
+    display: inline-block;
 }

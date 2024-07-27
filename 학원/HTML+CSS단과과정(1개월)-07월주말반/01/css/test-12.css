@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Sunflower:wght@300&display=swap');
+
+/* 웹 문서 초기화 부분 */
+/* * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+/* 전체 페이지 스타일 */
+/* 이 부분은 웹 문서 전체 글꼴에 대한 스타일 적용부분 */
+body {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* 공통 스타일 적용부분 */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.form2 td {
+    width: 100px;
+    height: auto;
+    text-align: center;
+    padding: 3px 10px;
+    background-color: yellow;
+}
+
+th {
+    width: 100px;
+    height: auto;
+    padding: 5px 10px;
+}
+
+.div-1 {
+    margin-top: 20px;
+}
+
+.form3 >select {
+    display: block;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #dddddd;
+    border: 1px solid green;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px black;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* 복습문제 수강신청 select 메뉴 만들기 스타일 적용 */
+.div-2 {
+    width: 800px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.div-2 .h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form4 {
+    /* text-align: center; */
+    height: auto;
+    width: 300px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.div-2>.form4>.container {
+    width: 400px;
+    height: auto;
+    border: 3px solid black;
+    box-shadow: 1px 1px 2px #ccc, 2px -2px 3px #ccc;
+}
+
+.div-2 .form4 ul {
+    list-style-type: none;
+}
+
+.div-2 .form4 ul label {
+    display: inline-block;
+    width: 80px;
+    text-align: left;
+}
+
+.div-3 {
+    text-align: center;
+    padding: 10px 0;
+}
