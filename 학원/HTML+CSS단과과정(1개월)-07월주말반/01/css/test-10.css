@@ -17,26 +17,3 @@ body {
     color: #333;
     background-color: #f4f4f4;
 }
-
-/* 공통 form태그 스타일 적용 */
-form {
-    width: 500px;
-    height: auto;
-    border: 2px solid black;
-    padding: 10px 20px;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-.fieldset_tit1 {
-    border: 6px solid blue;
-    border-radius: 10px;
-}
-
-.legend_tit1 {
-    margin-left: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: red;
-    font-weight: bold;
-}

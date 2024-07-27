@@ -92,8 +92,8 @@
     <!-- required : 필수 요소 -->
     <div>
         <form name="f5" action="#" method="get" autocomplete="on">
-            <fieldset>
-                <legend>개인정보</legend>
+            <fieldset class="fieldset_tit1">
+                <legend class="legend_tit1">개인정보77</legend>
                 <ul>
                     <li>
                         <label>이름</label>
@@ -107,15 +107,15 @@
                 </ul>
             </fieldset>
             <br>
-            <fieldset>
-                <legend>로그인정보</legend>
+            <fieldset class="fieldset_tit1">
+                <legend class="legend_tit1">로그인정보77</legend>
                 <ul>
                     <li>
                         <label for="user_id1">아이디</label>
                         <input type="text" name="user_id1" id="user_id1" name="user_id1" value="" required>
                     </li>
                     <li>
-                        <label for="user_pwd1">아이디</label>
+                        <label for="user_pwd1">비밀번호</label>
                         <input type="password" name="user_pwd1" id="user_pwd1" name="user_pwd1" value="" required>
                     </li>
 
@@ -132,6 +132,104 @@
 
     <br>
     <hr><br>
+
+    <!-- 복습 문제 -->
+    <form name="f6" action="#" method="get" autocomplete="on">
+        <fieldset>
+            <legend>필수정보</legend>
+            <label for="user_name">이름 : </label>
+            <input type="text" id="user_name" name="user_name" value="" required placeholder="이름 입력">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>선택정보</legend>
+            <label for="user_birth">생일 : </label>
+            <input type="date" id="user_birth" name="user_birth" value="" required placeholder="생년월일선택">
+            <!-- <input type="submit" value="제출">
+            <input type="reset" value="다시작성"> -->
+        </fieldset>
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+    </form>
+
+    <br>
+    <hr><br>
+
+    <!-- 복습 문제 상품주문서 연습 -->
+    <form name="f7" action="#" method="get" autocomplete="on">
+        <h3><mark>상품주문서</mark></h3>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li><label for="user_name">이름<input type="text" name="user_name" value="" required
+                            placeholder="여백없이 입력"></label></li>
+                <li><label for="user_phone">연락처<input type="text" name="user_phone" value="" required
+                            placeholder="여백없이 입력"></label></li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>배송지정보</legend>
+            <ul>
+                <li><label for="user_adress">주소<input type="text" name="user_adress" value="" required></label></li>
+                <li><label for="user_tell">전화번호<input type="text" name="user_tell" value="" required></label></li>
+                <li><label for="user_memo">메모<textarea id="user_memo" cols="20" rows="3"
+                            placeholder="배송관련 요청사항 입력"></textarea></label></li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>주문정보</legend>
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox">과태말라 안티구아 과일<small>(100g)</small>
+                        <input type="number" min="1" max="15" step="2">개
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox">인도네시아 만델링<small>(100g)</small>
+                        <input type="number" min="0" max="10" step="1">개
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox">탐라는도다(블렌딩)<small>(100g)</small>
+                        <input type="number" min="2" max="20" step="2">개
+                    </label>
+                </li>
+                <input type="submit" value="주문하기">
+                <input type="reset" value="다시작성">
+            </ul>
+        </fieldset>
+    </form>
+
+    <br>
+    <hr><br>
+
+    <!-- 복습문제 -->
+    <form name="f8" action="#" autocomplete="on">
+        <h3><mark>회원 정보</mark></h3>
+        <fieldset>
+            <legend>필수 정보</legend>
+            <ul>
+                <li><label for="user_name">이름 :
+                        <input type="text" name="user_name" value="" required placeholder="여백없이 입력"></label>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset>
+            <ul>
+                <li><label for="user_birth">생일 :
+                        <input type="date" name="user_birth" value="" required placeholder="생년월일 입력"></label>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="다시작성">
+    </form>
 
 
     <br><br><br><br><br><br><br><br><br><br>
