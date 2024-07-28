@@ -1,0 +1,142 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 웹 문서를 작성하기 위한 크기를 적용하는 스타일부분 */
+body {
+    width: 1000px;
+    height: 650px;
+    background-color: #ffffff;
+
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; */
+
+    /* border: 1px solid red; */
+}
+
+/* 웹 문서에 공통적인 요소 스타일 적용 */
+a {
+    text-decoration: none;
+    display: block;
+}
+
+/* header메뉴 스타일 적용 부분 */
+header {
+    float: left;
+    /* border: 1px solid red; */
+}
+
+.top {
+    float: left;
+    width: 200px;
+    height: 650px;
+
+    background-color: gray;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.menu {
+    float: left;
+    width: 200px;
+    height: 550px;
+
+    background-color: green;
+}
+
+
+
+
+/* 이미지 슬라이드 스타일 적용 부분 */
+.imageslide {
+    float: right;
+    width: 800px;
+    height: 350px;
+
+    background-color: orange;
+}
+
+
+
+
+/* contents 스타일 적용 부분 */
+.contents {
+    float: right;
+    width: 800px;
+    height: 200px;
+
+    background-color: purple;
+}
+
+.notice {
+    float: left;
+    width: 300px;
+    height: 200px;
+
+    background-color: yellowgreen;
+}
+
+.gallery {
+    float: left;
+    width: 200px;
+    height: 200px;
+
+    background-color: brown;
+}
+
+.shortcut {
+    float: left;
+    width: 300px;
+    height: 200px;
+
+    background-color: yellow;
+}
+
+
+
+
+/* footer 스타일 적용 부분 */
+.bottom {
+    float: right;
+    width: 800px;
+    height: 100px;
+    
+    background-color: blue;
+}
+
+.btlogo {
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    background-color: darkcyan;
+}
+
+.Copy {
+    float: left;
+    width: 400px;
+    height: 100px;
+
+    background-color: blanchedalmond;
+}
+
+.familysite {
+    float: right;
+    width: 200px;
+    height: 100px;
+
+    background-color: hotpink;
+}

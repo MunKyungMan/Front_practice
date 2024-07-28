@@ -1,0 +1,348 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: "맑은 고딕";
+    color: #333333;
+}
+
+/* 웹 문서를 작성하기 위한 크기를 적용하는 스타일부분 */
+body {
+    width: 1000px;
+    height: 650px;
+    background-color: #ffffff;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+    /* border: 1px solid red; */
+}
+
+/* 웹 문서에 공통적인 요소 스타일 적용 */
+a {
+    text-decoration: none;
+    /* 하이퍼링크 밑줄 초기화 */
+    display: block;
+    /* li태그 블록형식으로 설정 */
+}
+
+
+
+
+/* header메뉴 스타일 적용 부분 */
+header {
+    float: left;
+    position: absolute;
+    /* 현제 웹문서의 기준점으로 잡겠다. */
+}
+
+.top {
+    float: left;
+    width: 200px;
+    height: 650px;
+
+    /* background-color: gray; */
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.logo img {
+    float: left;
+    margin-top: 5px;
+    width: 198px;
+    box-shadow: 1px 1px 2px black;
+}
+
+.menu {
+    position: relative;
+    float: left;
+    /* width: 200px; */
+    /* height: 550px; */
+    top: 100px;
+    left: 10px;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+
+    /* background-color: green; */
+}
+
+/* ul태그 ~ li태그에 대한 스타일 적용부분 */
+.navi>li {
+    /* float: left; */
+
+}
+
+.navi>li>a {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.navi>li>a:hover {
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+/* ul.submenu태그에 대한 스타일 적용부분 */
+.submenu {
+    float: left;
+    width: 180px;
+    height: 160px;
+
+    /* ul태그 화면에 오른쪽 이동 (절대/상대좌표 이용) */
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    background-color: #cccccc;
+    z-index: 1;
+
+    /* .submenu를 잠시 사라지게 한다. */
+    display: none;
+}
+
+.submenu>li>a {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    /* height, line-heigt 값이 동일하면 가운대로 배치된다. */
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #999999;
+    color: #ffffff;
+}
+
+.submenu>li>a:hover {
+    background-color: #535252e3;
+    color: #000000;
+}
+
+.navi>li>.unline {
+    height: 4px;
+    border-top-width: 2px;
+    border-top-color: white;
+    border-bottom-width: 2px;
+    border-bottom-color: white;
+}
+
+
+
+/* 이미지 슬라이드 스타일 적용부분 */
+.imageslide {
+    float: right;
+    width: 800px;
+    height: 350px;
+
+    /* 좌표기능 적용 */
+    position: relative;
+
+    /* background-color: orange; */
+}
+
+.imageslide>a {
+    display: block;
+    position: absolute;
+}
+
+.imageslide span {
+    width: 190px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: rgba(200, 200, 200, 0.2);
+
+    /* span태그에 위치를 이동하기 위해서 position값 적용하기. */
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
+
+
+
+
+/* contents 스타일 적용 부분 */
+.contents {
+    float: right;
+    width: 800px;
+    height: 200px;
+    /* background-color: purple; */
+}
+
+.notice {
+    float: left;
+    width: 300px;
+    height: 200px;
+    /* background-color: yellowgreen; */
+}
+
+.tab {
+    float: left;
+    width: 300px;
+}
+
+/* 공지사항, 갤러리 탭에 대한 공통스타일 적용부분 */
+.tab-a:hover {
+    width: 120px;
+    cursor: pointer;
+    background-color: #969696;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 0 10px 0 0;
+}
+
+.notice h4 {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+
+.notice ul {
+    float: left;
+    width: 280px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.notice ul li span {
+    float: right;
+}
+
+.notice ul li:hover {
+    font-weight: bold;
+}
+
+/* 걸러리 세부 스타일 적용부분 */
+.gallery {
+    float: left;
+    width: 300px;
+    height: 200px;
+    /* background-color: brown; */
+}
+
+.tab h4 {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+
+.gallery ul li {
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.gallery img {
+    width: 80px;
+    height: 80px;
+}
+
+.shortcut {
+    float: left;
+    width: 200px;
+    height: 200px;
+
+    position: relative;
+    display: inline-block;
+
+    /* background-color: yellow; */
+}
+
+/* 바로가기 스타일 적용부분 */
+.shortcut img {
+    float: left;
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+}
+
+.shortcut .sctext {
+    width: 100px;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    /* 이미지 가운데 배치 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* footer 스타일 적용 부분 */
+.bottom {
+    float: right;
+    width: 800px;
+    height: 100px;
+    background-color: #ccc;
+}
+
+.btlogo {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+.btlogo img {
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 10px;
+
+}
+
+
+.Copy {
+    float: left;
+    width: 400px;
+    height: 100px;
+
+    text-align: center;
+    font-size: 14px;
+    line-height: 100px;
+    font-weight: bold;
+
+    /* background-color: blanchedalmond; */
+}
+
+
+
+.familysite {
+    float: right;
+    width: 200px;
+    height: 100px;
+
+
+
+    /* background-color: hotpink; */
+}
+
+.familysite select {
+    float: left;
+    height: 30px;
+    width: 190px;
+    margin-top: 35px;
+    margin-right: 10px;
+    font-size: 14px;
+}
