@@ -366,12 +366,59 @@ only screen and (min-resolution: 3dppx) {
     position: absolute; left: 11px; top: 8px;
 }
 
+/* 라이트 박스 */
+.suquare a {
+    float: left;
+    width: 19%;
+    margin: 0.5%;
+    position: relative;
+    overflow: hidden;
+}
 
+.suquare a img {
+    width: 100%;
+    display: block;
+}
 
+.suquare a em {
+    background: rgba(0,0,0,0.77);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: auto;
+    left: 0;
+    bottom: -30px;
+    opacity: 1;
+    transition: all .3s ease;
+    position: absolute;
+}
 
+.suquare a:hover em {
+    bottom: 0;
+    background-color: rgba(0,0,0,0.57);
+}
 
+.suquare a:nth-child(1):hover img {filter: blur(2px);}
+.suquare a:nth-child(2):hover img {filter: brightness(50%);}
+.suquare a:nth-child(3):hover img {filter: contrast(10%);}
+.suquare a:nth-child(4):hover img {filter: grayscale(100%);}
+.suquare a:nth-child(5):hover img {filter: hue-rotate(120deg);}
+.suquare a:nth-child(6):hover img {filter: invert(100%);}
+.suquare a:nth-child(7):hover img {filter: opacity(10%);}
+.suquare a:nth-child(8):hover img {filter: saturate(10%);}
+.suquare a:nth-child(9):hover img {filter: sepia(120%);}
+.suquare a:nth-child(10):hover img {filter: sepia(120%) hue-rotate(120deg);}
 
+/* 비디오 */
+.video {position: relative; width: 100%; padding-bottom: 56.25%;}
+.video iframe {position: absolute; width: 100%; height: 100%;}
 
+/* 푸터 */
+.footer {text-align: center; padding: 30px 50px;} 
+.footer li {display: inline; padding: 0 7px 0 10px; white-space: nowrap; position: relative;}
+.footer li::before {content: ''; width: 1px; height: 12px; background-color: #dbdbdb; position: absolute; left: 0;top: 2px;}
+.footer li:first-child::before {width: 0;}
+.footer address {padding-top: 15px;}
 
 
 
@@ -382,17 +429,25 @@ only screen and (min-resolution: 3dppx) {
     .container {width: 100%;}
     .row {padding: 0 15px;}
     #contents .container {border: 0;}
+
     .title .btn {right: 5px;}
+    .suquare a {width: 24%;}
+    .suquare a:nth-child(5n) {display: none;}
 }
 
 /* 화면 너비 0 ~ 1024px */
 @media (max-width: 1024px) {
-
+    .suquare a {width: 32.3333%;}
+    .suquare a:nth-child(5) {display: block;}
 }
 
 /* 화면 너비 0 ~ 960px */
 @media (max-width: 960px) {
-    #cont_right {position: static; width: 100%; border-top: 1px solid #dbdbdb;}
+    #cont_right {overflow: hidden; position: static; width: 100%; border-top: 1px solid #dbdbdb;}
+    #cont_right .column {float: left; width: 33.3333%; box-sizing: border-box;}
+    #cont_right .column.col7 {border-right: 1px solid #dbdbdb; border-bottom: 0;}
+    #cont_right .column.col8 {border-right: 1px solid #dbdbdb; border-bottom: 0;}
+
     #cont_center {margin-right: 0; border-right: 0;}
     .nav > div {float: none; width: 100%;}
     .nav > div:last-child {width: 100%;}
@@ -433,6 +488,13 @@ only screen and (min-resolution: 3dppx) {
     .slider figcation {padding: 10px}
     .slider figcation em {padding: 18px}
     .slider figcation span {padding: 14px}
+
+    .suquare a {width: 49%;}
+    .suquare a:nth-child(5) {display: none;}
+
+    #cont_right .column {width: 50%;}
+    #cont_right .column.col {border-right: 0px;}
+    #cont_right .column.col9 {display: none;}
 }
 
 /* 화면 너비 0 ~ 480px */
@@ -444,4 +506,9 @@ only screen and (min-resolution: 3dppx) {
 @media (max-width: 320px) {
     .nav > div li {width: 100%;}
     .nav > div:last-child li {width: 100%;}
+
+    .suquare a {width: 100%; margin-right: 0; margin-left: 0;}
+
+    #cont_right .column {width: 100%;}
+    #cont_right .column.col7 {border-right: 0; border-bottom: 1px solid #dbdbdb;}
 }
