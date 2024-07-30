@@ -317,9 +317,12 @@
                         <p class="col_desc">CSS의 transform을 이용한 마우스 오버효과입니다.</p>
                         <!-- side1 -->
                         <div class="side1">
-                            <figure>
+                            <figure class="front">
                                 <img src="img/side1.jpg" alt="이미지1">
                             </figure>
+                            <div class="back">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
                         </div>
                         <!-- //side1 -->
                     </article>
@@ -331,8 +334,17 @@
                         <p class="col_desc">CSS의 transform을 이용한 마우스 오버효과입니다.</p>
                         <!-- side2 -->
                         <div class="side2">
-                            <figure>
-                                <img src="img/side2.jpg" alt="이미지1">
+                            <figure class="front">
+                                <img src="img/side2.jpg" alt="이미지2">
+                                <figcaption>
+                                    Hover Effect
+                                </figcaption>
+                            </figure>
+                            <figure class="back">
+                                <img src="img/side4.jpg" alt="이미지2">
+                                <figcaption>
+                                    Hover Effect
+                                </figcaption>
                             </figure>
                         </div>
                         <!-- //side2 -->
@@ -345,8 +357,11 @@
                         <p class="col_desc">CSS의 transform을 이용한 마우스 오버효과입니다.</p>
                         <!-- side3 -->
                         <div class="side3">
-                            <figure>
-                                <img src="img/side3.jpg" alt="이미지1">
+                            <figure class="side3">
+                                <img src="img/side3.jpg" alt="이미지3">
+                                <figcaption>
+                                    <h3>Hover<em>Effect</em></h3>
+                                </figcaption>
                             </figure>
                         </div>
                         <!-- //side3 -->
@@ -396,9 +411,33 @@
         //https://share.naver.com/web/shareView.nhn?url={페이지링크}&title={페이지 제목}
         //https://plus.google.com/share?url={페이지링크}&t={페이지 제목}
         
+        // 접기 펼치기 영역
+        $(".btn").click(function(e){
+            e.preventDefault();
+            $(".nav").slideToggle();
+            $(".btn").toggleClass("open");
+
+            if($(".btn").hasClass("open")){
+                // open이 있을 때
+                $(".btn").find("i").attr("class","fa fa-angle-up");
+            } else {
+                // open이 없을 때
+                $(".btn").find("i").attr("class","fa fa-angle-down");
+            }
+        });
+
+        $(window).resize(function(){
+            var wWidth = $(window).width();
+            if(wwidth > 600){
+                $(".nav").removeAttr("style")
+            }
+        });
+
         //라이트 박스
         $(".lightbox").lightGallery({
-
+            autoplay: true,
+            pause: 3000,
+            progressBar: true
         });
 
         //이미지 슬라이더
