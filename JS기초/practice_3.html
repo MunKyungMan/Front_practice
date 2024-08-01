@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/practice_2.css">
+    <title>practice_3</title>
+</head>
+
+<body>
+
+    <div class="Alert-box" id="Alert">
+        <p>Alert 박스</p>
+        <button onclick="알림창닫기()">닫기</button>
+    </div>
+    <button onclick="알림창열기()">버튼</button>
+
+
+
+    <script>
+        
+        function 알림창열기(){
+            document.getElementById('Alert').style.display = 'block';
+        }
+
+        function 알림창닫기(){
+            document.getElementById('Alert').style.display ='none';
+        }
+
+    </script>
+
+</body>
+
+</html>
