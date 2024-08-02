@@ -31,8 +31,21 @@ function App() {
       </div>
 
       <button onClick={()=>{
-        글제목변경( ['여자 코트 추천', '강남 우동맛집', '파이썬 독학'] )
+        let copy = [...글제목];
+        copy[0] = '여자 코트 추천';
+        // 글제목[0] = '여자 코트 추천';
+        글제목변경(copy);
         }}>글수정</button>
+
+      <button onClick={()=>{
+        let copy = [...글제목];
+        copy.sort();
+        글제목변경(copy);
+      }}>가나다순정렬</button>
+
+
+
+
 
       <div className="list">
         <h4>{ 글제목[0] } <span onClick={ ()=> {좋아요변경(좋아요+1)} }>👍</span> {좋아요} </h4>
