@@ -2,7 +2,7 @@
 
 import logo from './logo.svg';
 import './App.css';
-import {useState} from 'react';
+import { useState } from 'react';
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
   let [logo, setLogo] = useState('ReactBlog');
 
   let [좋아요, 좋아요변경] = useState(0);
-  
+
 
   // function 함수(){
   //   console.log(1);
@@ -30,14 +30,14 @@ function App() {
         <h4>{logo}</h4>
       </div>
 
-      <button onClick={()=>{
+      <button onClick={() => {
         let copy = [...글제목];
         copy[0] = '여자 코트 추천';
         // 글제목[0] = '여자 코트 추천';
         글제목변경(copy);
-        }}>글수정</button>
+      }}>글수정</button>
 
-      <button onClick={()=>{
+      <button onClick={() => {
         let copy = [...글제목];
         copy.sort();
         글제목변경(copy);
@@ -48,17 +48,26 @@ function App() {
 
 
       <div className="list">
-        <h4>{ 글제목[0] } <span onClick={ ()=> {좋아요변경(좋아요+1)} }>👍</span> {좋아요} </h4>
+        <h4>{글제목[0]} <span onClick={() => { 좋아요변경(좋아요 + 1) }}>👍</span> {좋아요} </h4>
         <p>8월 2일 발행</p>
       </div>
       <div className="list">
-        <h4>{ 글제목[1] } <span onClick={ ()=> {좋아요변경(좋아요+1)} }>👍</span> {좋아요} </h4>
+        <h4>{글제목[1]} <span onClick={() => { 좋아요변경(좋아요 + 1) }}>👍</span> {좋아요} </h4>
         <p>8월 2일 발행</p>
       </div>
       <div className="list">
-        <h4>{ 글제목[2] } <span onClick={ ()=> {좋아요변경(좋아요+1)} }>👍</span> {좋아요} </h4>
+        <h4>{글제목[2]} <span onClick={() => { 좋아요변경(좋아요 + 1) }}>👍</span> {좋아요} </h4>
         <p>8월 2일 발행</p>
       </div>
+
+      <Modal></Modal>
+
+
+
+
+
+
+
     </div>
   );
 
@@ -70,6 +79,16 @@ function App() {
   //     <h4>{ post }</h4>
   //   </div>
   // );
+}
+
+function Modal() {
+  return (
+    <div className='modal'>
+      <h4>제목</h4>
+      <p>날짜</p>
+      <p>상세내용</p>
+    </div>
+  )
 }
 
 export default App;
