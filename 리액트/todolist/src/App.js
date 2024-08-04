@@ -12,11 +12,11 @@ function App() {
   }
   return (
     <main>
-      <input type="text" onChange=
+      <input value={inputValue} type="text" onChange=
         {(event) => setInputValue(event.target.value)} />
       <button onClick={addItem}>추가</button>
 
-      <TodoBoard />
+      <TodoBoard todoList={todoList}/>
     </main>
   );
 }

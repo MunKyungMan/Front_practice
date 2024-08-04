@@ -1,10 +1,10 @@
 import React from "react";
 
-function TodoItem() {
+function TodoItem(props) {
 
     return (
         <div className="todo-item">
-            공부하기
+            {props.item}
         </div>
 
     )
