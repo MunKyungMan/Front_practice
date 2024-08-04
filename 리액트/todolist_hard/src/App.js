@@ -69,7 +69,7 @@ function App() {
               ref={refTodoItem}
             />
             <div onClick={() => handleTodoAdd(refTodoItem.current.value)}>
-              ﹢
+              <p>﹢</p>
             </div>
           </div>
         </div>
