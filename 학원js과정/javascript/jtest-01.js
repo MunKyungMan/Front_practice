@@ -14,13 +14,29 @@ var head = document.querySelector("#heading");
 var headOriginalColor = getComputedStyle(head).color; // 현재 스타일을 가져옴
 var headRed = false;
 
-head.onclick = function() {
+head.onclick = function () {
     if (headRed) {
         head.style.color = headOriginalColor;
         headRed = false;
     } else {
         head.style.color = "red";
         headRed = true;
+    }
+}
+
+
+//  hr선에 대한 스타일 적용부분
+var hr_line = document.querySelector("#line");
+var hrOriginBorder = getComputedStyle(hr_line).border;
+var hrBlue = false;
+
+hr_line.onclick = function () {
+    if (hrBlue) {
+        hr_line.style.border = hrOriginBorder;
+        hrBlue = false;
+    } else {
+        hr_line.style.border = "20px solid blue";
+        hrBlue = true;
     }
 }
 
