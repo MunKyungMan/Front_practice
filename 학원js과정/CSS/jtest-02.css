@@ -11,5 +11,42 @@ body {
     font-family: "Nanum Gothic", sans-serif, "맑은 고딕";
     font-weight: 400;
     font-style: normal;
+
+    /* jtest-02.html을 위한 추가부분 */
+    /* width: 520px;
+    height: auto;
+    border: 4px solid blue;
+    padding: 20px 0;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px black, 3px 3px 5px #ccc;
+
+    color: white;
+    font-weight: 700;
+    text-shadow: 3px 3px 3px rgba(146,38,8,0.8);
+    text-align: center;
+
+    background-color: yellow; */
+}
+
+.contents {
+    width: 520px;
+    height: auto;
+    border: 4px solid blue;
+    padding: 20px 0;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px black, 3px 3px 5px #ccc;
+
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 3px 3px 3px rgba(146,38,8,0.8);
+    text-align: center;
+
+    background-color: black;
+}
+
+.text1 {
+    color: red;
 }
 

@@ -12,16 +12,24 @@
 </head>
 
 <body>
-    <!-- 1. 사용자가 마우스 클릭 하면 색상이 변하는 코드 -->
-    <div id="container">
-        <h1 id="heading" title="클릭해보세요">자바스크립트</h1>
-        <a href="#">
-            <hr id="line">
-        </a>
-        <p id="text">위 텍스트와 선을 차례대로 클릭해보세요.</p>
-    </div>
+    <!-- 1. 환영메세지 연습하기 -->
+    <div class="contents">
+        <h1>어서오세요/반갑습니다.</h1>
+        <br>
+        <script>
+            var name = prompt("이름을 입력하세요: ", "홍길동")
+            // document.write("<b><big>" + name + "</big></b>님, 환영합니다.<br>")
+            document.write(`<b><big> ${ name } </big></b>님, 환영합니다.<br>`)
+        </script>
+        <br>
+        <script>
+            var text1 = prompt("별명을 입력하세요: ", "베트맨")
+            // document.write("<b><big>" + text1 + "</big></b>님으로 <span class='text1'>회원가입</span> 되었습니다.")
+            document.write(`<b><big> ${ text1 } </big></b>님으로 <span class='text1'>회원가입</span> 되었습니다.`)
+        </script>
 
-    <script src="./javascript/jtest-02.js"></script>
+        <!-- <script src="./javascript/jtest-02.js"></script> -->
+    </div>
 
 </body>
 
