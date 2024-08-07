@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nanum Gothic", sans-serif, "맑은 고딕";
+    font-weight: 400;
+    font-style: normal;
+
+    /* 연습을 위한 추가코드
+    width: 800px;
+    height: auto;
+    border: 2px solid black;
+    background-color: yellow;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px black, 3px 3px 5px #ccc;
+
+    color: black;
+    text-shadow: 3px 3px 3px rgba(146, 38, 8, 0.9);
+    line-height: 3em;
+    text-align: center;
+    padding: 10px;
+    box-sizing: content-box; */
+
+    background-color: #ccc;
+}
+
+.container {
+
+    /* 연습을 위한 추가코드 */
+    width: 800px;
+    height: auto;
+    border: 2px solid black;
+    background-color: yellow;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px black, 3px 3px 5px #ccc;
+
+    color: black;
+    text-shadow: 3px 3px 3px rgba(146, 38, 8, 0.9);
+    line-height: 3em;
+    text-align: center;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+.now_time {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+.back1 {
+    background-color: rgba(27, 148, 248, 0.86);
+    border: 1px solid black;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+.back1:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}

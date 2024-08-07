@@ -40,7 +40,7 @@ body {
 
     color: #ffffff;
     font-weight: 700;
-    text-shadow: 3px 3px 3px rgba(146,38,8,0.8);
+    text-shadow: 3px 3px 3px rgba(146, 38, 8, 0.8);
     text-align: center;
 
     background-color: black;
@@ -49,4 +49,3 @@ body {
 .text1 {
     color: red;
 }
-
