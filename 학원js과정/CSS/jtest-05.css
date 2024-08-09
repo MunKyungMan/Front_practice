@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nanum Gothic", sans-serif, "맑은 고딕";
+    font-weight: 400;
+    font-style: normal;
+
+    /* 추가 스타일 부분 */
+    text-align: center;
+}
+
+.btn {
+    margin-top: 50px;
+    font-weight: 400;
+    background-color: #007bff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    /* line-height: 1.2; */
+    border-color: #007bff;
+    border-radius: 0.25rem;
+    /* 애니메이션(transition) */
+    transition: background-color 0.5s ease-in-out,
+        border-color 0.3s,
+        box-shadow 0.3s ease-in-out;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+    box-shadow: 1px 1px 2px black, 1px 1px 3px #ccc;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.show {
+    width: 520px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    border: 2px solid black;
+}
