@@ -21,9 +21,71 @@ window.addEventListener("mousemove", function (e) {
 });
 
 // 마우스 오버효과
-document.querySelector(".mouseCont .style1").addEventListener("mouseover", function(){
-    document.querySelector(".cursor").classList.add("style1");
-});
-document.querySelector(".mouseCont .style1").addEventListener("mouseout", function(){
-    document.querySelector(".cursor").classList.add("style1");
-});
+// document.querySelector(".mouseCont .style1").addEventListener("mouseover", function () {
+//     document.querySelector(".cursor").classList.add("style1");
+// });
+// document.querySelector(".mouseCont .style1").addEventListener("mouseout", function () {
+//     document.querySelector(".cursor").classList.remove("style1");
+// });
+// document.querySelector(".mouseCont .style2").addEventListener("mouseover", function () {
+//     document.querySelector(".cursor").classList.add("style2");
+// });
+// document.querySelector(".mouseCont .style2").addEventListener("mouseout", function () {
+//     document.querySelector(".cursor").classList.remove("style2");
+// });
+// document.querySelector(".mouseCont .style3").addEventListener("mouseover", function () {
+//     document.querySelector(".cursor").classList.add("style3");
+// });
+// document.querySelector(".mouseCont .style3").addEventListener("mouseout", function () {
+//     document.querySelector(".cursor").classList.remove("style3");
+// });
+// document.querySelector(".mouseCont .style4").addEventListener("mouseover", function () {
+//     document.querySelector(".cursor").classList.add("style4");
+// });
+// document.querySelector(".mouseCont .style4").addEventListener("mouseout", function () {
+//     document.querySelector(".cursor").classList.remove("style4");
+// });
+// document.querySelector(".mouseCont .style5").addEventListener("mouseover", function () {
+//     document.querySelector(".cursor").classList.add("style5");
+// });
+// document.querySelector(".mouseCont .style5").addEventListener("mouseout", function () {
+//     document.querySelector(".cursor").classList.remove("style5");
+// });
+// document.querySelector(".mouseCont .style6").addEventListener("mouseover", function () {
+//     document.querySelector(".cursor").classList.add("style6");
+// });
+// document.querySelector(".mouseCont .style6").addEventListener("mouseout", function () {
+//     document.querySelector(".cursor").classList.remove("style6");
+// });
+
+// for()문
+// for (let i = 1; i <= 6; i++) {
+//     document.querySelector(".mouseCont .style" + i).addEventListener("mouseover", function () {
+//         document.querySelector(".cursor").classList.add("style" + i);
+//     });
+//     document.querySelector(".mouseCont .style" + i).addEventListener("mouseout", function () {
+//         document.querySelector(".cursor").classList.remove("style" + i);
+//     });
+// }
+
+// forEach()
+// document.querySelectorAll(".mouseCont span").forEach((element, index) => {
+//     element.addEventListener("mouseover", () => {
+//         document.querySelector(".cursor").classList.add("style" + (index + 1));
+//     });
+//     element.addEventListener("mouseout", function () {
+//         document.querySelector(".cursor").classList.remove("style" + (index + 1));
+//     });
+// })
+
+// getAttribute
+document.querySelectorAll(".mouseCont span").forEach(element => {
+    let style = element.getAttribute("class");
+
+    element.addEventListener("mouseover", () => {
+        document.querySelector(".cursor").classList.add(style);
+    })
+    element.addEventListener("mouseout", () => {
+        document.querySelector(".cursor").classList.remove(style);
+    })
+})
