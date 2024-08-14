@@ -63,11 +63,18 @@ $(window).mousemove(function (e) {
 // }
 
 // each()문
-$(".mouseCont span").each(function (index, element) {
-    $(element).hover(function () {
-        $(".cursor").addClass("style" + (index + 1));
-    }, function () {
-        $(".cursor").removeClass("style" + (index + 1));
-    });
+// $(".mouseCont span").each(function (index, element) {
+//     $(element).hover(function () {
+//         $(".cursor").addClass("style" + (index + 1));
+//     }, function () {
+//         $(".cursor").removeClass("style" + (index + 1));
+//     });
+// });
+
+// attr() 속성
+$(".mouseCont span").hover(function(){
+    $(".cursor").addClass($(this).attr("class"));
+}, function(){
+    $(".cursor").removeClass($(this).attr("class"));
 });
 
