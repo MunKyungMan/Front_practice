@@ -19,3 +19,11 @@ window.addEventListener("mousemove", function (e) {
     let y = e.clientY - 25 + "px";
     this.document.querySelector(".cursor").style.cssText = "left:" + x + "; top:" + y;
 });
+
+// 마우스 오버효과
+document.querySelector(".mouseCont .style1").addEventListener("mouseover", function(){
+    document.querySelector(".cursor").classList.add("style1");
+});
+document.querySelector(".mouseCont .style1").addEventListener("mouseout", function(){
+    document.querySelector(".cursor").classList.add("style1");
+});
