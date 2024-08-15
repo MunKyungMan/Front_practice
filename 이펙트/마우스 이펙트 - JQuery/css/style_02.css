@@ -139,7 +139,7 @@
     height: 100vh;
     overflow: hidden;
     font-family: 'NEXONLv1Gothic';
-    /* cursor: none; */
+    cursor: none;
 }
 
 .mouseCont p {
