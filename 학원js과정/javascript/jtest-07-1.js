@@ -17,6 +17,61 @@ function calc3() {
 
 // 아이디선택자 #result 결과값을 삭제하는 코드 작성하기
 document.write(`<button onclick='textclear()' class='btn'>Clear Button</button>`);
-function textclear(){
+function textclear() {
     document.querySelector("#result").innerText = ``;
 };
+
+document.write(`<body><hr><br><table style="border:2px solid black; margin: 30px auto;"><tbody>
+    <tr><th style="border:1px solid blue; width: 100px; height: 25px;">1행 1열</th><th style="border:1px solid blue;  width: 100px; height: 25px; background-color: blue;" colspan="2";>1행 2열</th></tr>
+    <tr><th style="border:1px solid blue;  width: 100px; height: 25px;">2행 1열</th><th style="border:1px solid blue;  width: 100px; height: 25px;">2행 2열</th><th style="border:1px solid blue;  width: 100px; height: 25px;">2행 3열</th></tr>
+    <tr><th style="border:1px solid blue;  width: 100px; height: 25px;">3행 1열</th><th style="border:1px solid blue; background-color: yellow;"><a href="https://www.daum.net" style="color: black; text-decoration: none;  width: 100px; height: 25px;" title="다음이동">3행 2열</a></th><th style="border:1px solid blue;  width: 100px; height: 25px;">3행 3열</th></tr>
+    </tbody></table></body>`);
+
+document.write(`
+    <body>
+    <hr><br><hr>
+        <table style="border:2px solid black; margin: 30px auto;">
+            <tbody>
+                <tr>
+                    <th style="border:1px solid blue; width: 100px; height: 25px;">
+                        1행 1열
+                    </th>
+                    <th style="border:1px solid blue; width: 100px; height: 25px; background-color: yellow;" colspan="2";>
+                        1행 2열
+                    </th>
+                    <th style="border:1px solid blue; width: 100px; height: 25px;">
+                        1행 3열
+                    </th>
+                </tr>
+                <tr>
+                    <th style="border:1px solid blue; width: 100px; height: 25px;">
+                        2행 1열
+                    </th>
+                    <th style="border:1px solid blue; width: 100px; height: 25px;">
+                        2행 2열
+                    </th>
+                    <th style="border:1px solid blue; width: 100px; height: 25px;">
+                        2행 3열
+                    </th>
+                    <th style="border:1px solid blue; width: 100px; height: 25px;">
+                        2행 4열
+                    </th>
+                </tr>
+                <tr>
+                    <th style="border:1px solid blue; width: 100px; height: 25px;">
+                        3행 1열
+                    </th>
+                    <th style="border:1px solid blue; width: 100px; height: 25px; background-color: blue;"> <a href="https://www.daum.net" style="color: black; text-decoration: none;  width: 100px; height: 25px;" title="다음이동">
+                        3행 2열</a>
+                    </th>
+                    <th style="border:1px solid blue; width: 100px; height: 25px;">
+                        3행 3열
+                    </th>
+                    <th style="border:1px solid blue; width: 100px; height: 25px;">
+                        3행 4열
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </body>`);
+    
