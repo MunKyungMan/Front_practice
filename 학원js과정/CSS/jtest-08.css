@@ -13,7 +13,63 @@ body {
     font-style: normal;
 
     /* 추가 스타일 부분 */
+    /* text-align: center; */
+    background-color: #ffffff;
+}
+
+#contents {
+    width: 550px;
+    height: auto;
+    border: 3px solid black;
+    font-size: 1.3em;
+    font-weight: bold;
+
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 2px 2px 3px #cccccc;
+}
+
+/* 이미지에 대한 위치 스타일 조정하기 */
+#contents>img {
+    float: left;
+    margin-right: 25px;
+}
+
+/* contents내에 있는 ul태그에 대한 스타일 조정하기 */
+#contents ul {
+    list-style-type: none;
+    padding-top: 40px;
+}
+
+#contents li {
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+}
+
+#contents li>label {
+    width: 120px;
+    float: left;
+    text-align: right;
+}
+
+#contents input[type="text"] {
+    width: 120px;
+    padding: 5px 10px;
+    margin: 0 5px 0 10px;
+
+    text-align: right;
+}
+
+.li3 {
+    margin-top: 20px;
     text-align: center;
+}
+
+/* 계산된 값이 표시되는 div에 대한 스타일 적용 */
+#showResult {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 0.9em;
 }
 
 .btn {
@@ -43,4 +99,3 @@ body {
     cursor: pointer;
     font-weight: 800;
 }
-
