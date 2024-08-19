@@ -37,4 +37,7 @@ function showPrice() {
     var fomattedResultPrice = resultPrice.toLocaleString();
 
     document.querySelector("#showResult").innerHTML = `상품의 원래 가격은 ${fomattedOriginPrice}원 이고, 할인률 ${rate}%을 적용받아 ${fomattedResultPrice}원으로 구매 가능합니다.`;
+
+    // 알림창에 출력하기
+    alert(`상품의 원래 가격은 ${formattedOriginPrice}원 이고, 할인률 ${rate}%을 적용받아 ${formattedResultPrice}원으로 구매 가능합니다.`);
 }
