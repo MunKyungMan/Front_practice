@@ -38,7 +38,7 @@
 .bg {
     position: relative;
     height: 100vh;
-    background-image: url("https://webstoryboy.github.io/ScriptEffect/webstoryboy/assets/img/bg10@2.jpg");
+    background-image: url(../assets/img/bg10@2.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -166,10 +166,15 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 5px solid #fff;
-    background: url(https://webstoryboy.github.io/ScriptEffect/webstoryboy/assets/img/bg10@2.jpg) center center;
+    background: url(../assets/img/bg10@2.jpg) center center;
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
+    border: 5px solid #fff;
+    overflow: hidden;
     z-index: -1;
+}
+
+.info.left li.active {
+    text-decoration: underline;
+    color: orange;
 }
