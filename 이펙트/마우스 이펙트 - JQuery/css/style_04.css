@@ -38,7 +38,7 @@
 .bg {
     position: relative;
     height: 100vh;
-    background-image: url("https://webstoryboy.github.io/ScriptEffect/webstoryboy/assets/img/bg10@2.jpg");
+    background-image: url(https://github.com/MunKyungMan/Front_practice/raw/main/%EC%9D%B4%ED%8E%99%ED%8A%B8/img/bg10@2.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@
     height: 200px;
     border-radius: 50%;
     border: 5px solid #fff;
-    background: url(https://webstoryboy.github.io/ScriptEffect/webstoryboy/assets/img/bg10@2.jpg) center center;
+    background: url(https://github.com/MunKyungMan/Front_practice/raw/main/%EC%9D%B4%ED%8E%99%ED%8A%B8/img/bg10@2.jpg) center center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;

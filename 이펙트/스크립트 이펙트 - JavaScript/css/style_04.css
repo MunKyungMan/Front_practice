@@ -38,7 +38,7 @@
 .bg {
     position: relative;
     height: 100vh;
-    background-image: url(../assets/img/bg10@2.jpg);
+    background-image: url(https://github.com/MunKyungMan/Front_practice/raw/main/%EC%9D%B4%ED%8E%99%ED%8A%B8/img/bg16@2.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -51,7 +51,7 @@
     top: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(52, 5, 70, 0.9);
+    background-color: rgba(5, 36, 70, 0.8);
     z-index: -1;
 }
 
@@ -166,7 +166,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: url(../assets/img/bg10@2.jpg) center center;
+    background-image: url(https://github.com/MunKyungMan/Front_practice/raw/main/%EC%9D%B4%ED%8E%99%ED%8A%B8/img/bg16@2.jpg) center center;
     background-attachment: fixed;
     background-size: cover;
     border: 5px solid #fff;
