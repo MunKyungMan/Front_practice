@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/jQtest-02-1.css">
+    <link rel="icon" type="image/x-icon" href="./image/원피스1.svg">
+    <title>jQtest-02-1(응용연습)</title>
+    <script src="./javascript/jquery4.0.0-beta.2.js"></script>
+    <script src="./javascript/jquery-migrate.min3.5.2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        $(function () {
+            $("*").css("border", "3px solid blue");
+
+            $("h2").css("border", "1px solid red");
+
+            $("h3").mouseover(function () {
+                this.style.color = "red";
+                this.style.textShadow = "2px 2px 3px black";
+            });
+        });
+    </script>
+    
+    <!-- JQuery 선택자 연습_기본형에 직접선택자 -->
+    <!-- 공통적인 html태그 작성하기 -->
+    <h1>제이쿼리</h1>
+    <h2>선택자</h2>
+    <h3>직접선택자 -> 전체선택자 $('*') 연습</h3>
+
+
+
+    <script src="./javascript/jQtest-02-1.js"></script>
+</body>
+
+</html>

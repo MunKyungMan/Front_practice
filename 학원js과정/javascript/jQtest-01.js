@@ -20,7 +20,7 @@ $(function () {
         "box-shadow": "3px 2px 5px black",
         "padding": "10px 0px",
         "margin-top": "40px",
-        "background": "url('../image/베스트2.gif')"
+        "background": "url('./image/베스트2.gif')"
     });
 
     // #title 스타일 적용
