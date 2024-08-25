@@ -9,19 +9,48 @@
     <title>jQtest-01</title>
     <script src="./javascript/jquery4.0.0-beta.2.js"></script>
     <script src="./javascript/jquery-migrate.min3.5.2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
     <!-- 1. 주민번호 검색, 성년/미성년자, 성별 구분 코드 -->
-    <div>
-        <h1>성별/성인여부 확인 프로그램</h1>
-        <button class="btn" onclick="jumminNum()">시작하기</button>
+    <div id="contents1">
+        <h1 id="title">JQuery 입문</h1>
     </div>
 
+    <script>
+        $(function () {
+            // CSS 스타일링을 한 번에 적용
+            $("#contents1").css({
+                "border": "2px dashed red",
+                "padding": "10px 0px",
+                "margin-top": "40px"
+            });
+
+            // 올바른 선택자로 변경
+            $("#title").css({
+                'margin-right': 'auto',
+                'margin-left': 'auto',
+                'width': '200px',
+                'text-align': 'center',
+                'border': '2px solid black',
+                'padding': '10px 20px',
+                'box-sizing': 'content-box'
+            });
+
+            // 마우스 오버 이벤트
+            $("#title").mouseover(function () {
+                this.style.color = "#ffffff";
+                this.style.fontSize = "3em";
+                this.style.backgroundColor = "yellowgreen";
+                this.style.cursor = "pointer";
+            });
+        });
+
+    </script>
     <script src="./javascript/jQtest-01.js"></script>
 
 </body>
-
-
 
 </html>
