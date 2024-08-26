@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <script>
+    <!-- <script>
         $(function () {
             $("*").css("border", "3px solid blue");
 
@@ -25,15 +25,25 @@
                 this.style.textShadow = "2px 2px 3px black";
             });
         });
-    </script>
-    
+    </script> -->
+
     <!-- JQuery 선택자 연습_기본형에 직접선택자 -->
     <!-- 공통적인 html태그 작성하기 -->
     <h1>제이쿼리</h1>
     <h2>선택자</h2>
     <h3>직접선택자 -> 전체선택자 $('*') 연습</h3>
 
+    <script>
+        $(function(){
+            $("*").css("border", "3px solid black");
+            $("h2").css("border", "1px bashed red");
 
+            $("h3").mouseover(function(){
+                this.style.color = "red";
+                this.style.textShadow = "2px 2px 2px black";
+            });
+        });
+    </script>
 
     <script src="./javascript/jQtest-02-1.js"></script>
 </body>
