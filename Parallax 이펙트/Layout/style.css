@@ -143,29 +143,29 @@
     margin-left: -3vw;
 }
 .content__item:nth-child(1) .content__item__img {
-    background-image: url(https://github.com/MunKyungMan/Front_practice/raw/main/%EC%9D%B4%ED%8E%99%ED%8A%B8/img/bg1.jpg);
+    background-image: url('https://raw.githubusercontent.com/MunKyungMan/Front_practice/main/%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%9D%B4%ED%8E%99%ED%8A%B8/img/bg1.jpg');
 }
 .content__item:nth-child(2) .content__item__img {
-    background-image: url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg2.jpg);
+    background-image: url('https://raw.githubusercontent.com/MunKyungMan/Front_practice/main/%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%9D%B4%ED%8E%99%ED%8A%B8/img/bg2.jpg');
 }
 .content__item:nth-child(3) .content__item__img {
-    background-image: url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg3.jpg);
+    background-image: url('https://raw.githubusercontent.com/MunKyungMan/Front_practice/main/%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%9D%B4%ED%8E%99%ED%8A%B8/img/bg3.jpg');
 }
 .content__item:nth-child(4) .content__item__img {
-    background-image: url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg4.jpg);
+    background-image: url('https://raw.githubusercontent.com/MunKyungMan/Front_practice/main/%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%9D%B4%ED%8E%99%ED%8A%B8/img/bg4.jpg');
 }
 .content__item:nth-child(5) .content__item__img {
-    background-image: url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg5.jpg);
+    background-image: url('https://raw.githubusercontent.com/MunKyungMan/Front_practice/main/%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%9D%B4%ED%8E%99%ED%8A%B8/img/bg5.jpg');
 }
 .content__item:nth-child(6) .content__item__img {
-    background-image: url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg6.jpg);
+    background-image: url('https://raw.githubusercontent.com/MunKyungMan/Front_practice/main/%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%9D%B4%ED%8E%99%ED%8A%B8/img/bg6.jpg');
 }
 .content__item:nth-child(7) .content__item__img {
-    background-image: url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg7.jpg);
+    background-image: url('https://raw.githubusercontent.com/MunKyungMan/Front_practice/main/%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%9D%B4%ED%8E%99%ED%8A%B8/img/bg7.jpg');
 }
 .content__item:nth-child(8) .content__item__img {
-    background-image: url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg8.jpg);
+    background-image: url('https://raw.githubusercontent.com/MunKyungMan/Front_practice/main/%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%9D%B4%ED%8E%99%ED%8A%B8/img/bg8.jpg');
 }
 .content__item:nth-child(9) .content__item__img {
-    background-image: url(https://webstoryboy.github.io/wtss/refer-effect/assets/img/bg9.jpg);
+    background-image: url('https://raw.githubusercontent.com/MunKyungMan/Front_practice/main/%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%9D%B4%ED%8E%99%ED%8A%B8/img/bg9.jpg');
 }
