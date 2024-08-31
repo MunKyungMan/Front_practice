@@ -18,6 +18,19 @@ body {
     text-align: center;
 }
 
+p {
+    color: blue;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    background-color: yellow;
+    width: 500px;
+    height: auto;
+    border: 1px solid black;
+    margin: 30px auto;
+    line-height: 2em;
+}
+
 .btn {
     margin-top: 50px;
     font-weight: 400;
@@ -45,3 +58,4 @@ body {
     cursor: pointer;
     font-weight: 800;
 }
+
