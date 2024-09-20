@@ -1,5 +1,5 @@
 <h1>Front_Practice</h1>
-<br>
+<br><hr>
 <ul>
   <li>JS기초</li>
   <li>Parallax 이펙트</li>
@@ -12,5 +12,5 @@
   <li>학원Html, Css과정</li>
   <li>학원Js과정</li>
 </ul>
-<br>
+<br><hr>
 <span>혼자 공부한 것을 올리는 공간입니다.</span>
