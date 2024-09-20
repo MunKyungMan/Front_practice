@@ -12,5 +12,5 @@
   <li>학원Html, Css과정</li>
   <li>학원Js과정</li>
 </ul>
-<hr><br>
+<hr>
 <span>혼자 공부한 것을 올리는 공간입니다.</span>
